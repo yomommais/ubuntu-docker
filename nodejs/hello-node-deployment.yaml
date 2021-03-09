@@ -1,0 +1,23 @@
+# sudo microk8s.kubectl apply -f hello-node-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-node
+  labels:
+    app: hello-node
+spec:
+  selector:
+    matchLabels:
+      app: hellow-node
+  template:
+    metadata:
+      labels:
+        app: hello-node
+    spec:
+      containers:
+      - name: hello-node
+        image: hello-node:latest
+# Use the localhost:32000 path to use image from registry service
+# e.g.  image: localhost:32000/hello-node:v3
+        ports:
+        - containerPort: 8080

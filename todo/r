@@ -1,0 +1,15 @@
+# To make an update:
+# 1. edit code
+# 2. stop and remove container (docker rm  -f <container id>)
+# 3. run this again
+
+#docker run -dp 3000:3000 getting-started
+
+# By default, the todo app stores its data in a SQLite Database at /etc/todos/todo.db.
+# Run specifying a volume mount.
+# (created via docker volume create todo-db)
+docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+
+# docker volume inspect todo-db
+
+# docker logs -f <container id>

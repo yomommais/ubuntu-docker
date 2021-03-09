@@ -1,0 +1,8 @@
+# The second command is simply watching a file to keep the container running
+docker run -d ubuntu bash -c "shuf -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"
+
+# To attach
+# docker exec -it <container name> /bin/bash
+
+# Command
+# docker exec <container name> cat /data.txt

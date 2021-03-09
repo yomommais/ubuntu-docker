@@ -1,0 +1,6 @@
+# share app
+# 1. hub.docker.com
+# 2. create new repo: getting-started.
+# 3. docker login -u yomommais
+# 4. docker tag getting-started yomommais/getting-started
+# 5. docker push yomommais/getting-started

@@ -1,0 +1,2 @@
+# Run container in detached mode / map port / image to use
+docker run -d -p 80:80 docker/getting-started

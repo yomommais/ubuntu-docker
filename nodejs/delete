@@ -1,0 +1,3 @@
+#!/bin/bash
+microk8s kubectl delete deployment hello-node
+microk8s kubectl delete service hellonode-service

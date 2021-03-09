@@ -1,0 +1,6 @@
+#!/bin/bash
+# --rm automatically removes the container when it exists.
+#docker run -it --rm demo
+docker run -it demo
+
+#docker run -it --name test --volumes-from test docker_volume
